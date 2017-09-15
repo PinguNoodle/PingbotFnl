@@ -74,11 +74,66 @@ client.on('message', message => {
   }
 });
 client.on('message', message => {
-    if (message.content.startsWith('im')) {
-    message.reply(message.content. replace('im','Hello' ) + ' im Pingbot')
+    if (message.content.startsWith('im ' )) {
+    message.reply(message.content.replace('im ','Hello ' ) + ' im Pingbot')
+    };
+});
+  client.on('message', message => {
+    if (message.content.startsWith('gay')) {
+    message.reply("<https://www.youtube.com/watch?v=sWS0GVOQPs0>")
+    };
+});
+  client.on('message', message => {
+    if (message.content.startsWith('Gay')) {
+    message.reply("<https://www.youtube.com/watch?v=sWS0GVOQPs0>")
+    };
+});
+  client.on('message', message => {
+    if (message.content.startsWith('Thats gay')) {
+    message.reply("<https://www.youtube.com/watch?v=sWS0GVOQPs0>")
+    };
+});
+  client.on('message', message => {
+    if (message.content.startsWith('Im ')) {
+    message.reply(message.content. replace('Im ','Hello ' ) + ' im Pingbot')
       
     };
 });
+  client.on('message', message => {
+    if (message.content.startsWith("I'm ")) {
+    message.reply(message.content. replace("I'm ",'Hello ' ) + ' im Pingbot')
+      
+    };
+});
+   client.on('message', message => {
+    if (message.content.startsWith("i'm ")) {
+    message.reply(message.content. replace("i'm ",'Hello ' ) + ' im Pingbot')
+      
+    };
+});
+   client.on('message', message => {
+    if (message.content.startsWith("iM ")) { 
+    message.reply(message.content. replace("iM ",'Hello ' ) + ' im Pingbot')
+      
+    };
+});
+   client.on('message', message => {
+    if (message.content === ("!good-song")) {
+    message.reply('<https://www.youtube.com/watch?v=vdjPnlAJmAY>')
+      
+    };
+}); 
+
+  client.on('author', message => {
+  if(message.content.startsWith('!ban'))
+       ((function(){})(guildMember.ban(options.days = 7)));
+  }),
+  client.on('message', message => {
+    if (message.content === 'guests') {
+    message.channel.sendMessage('Guests more like not pingu');
+  }
+});
+
 
 
 
