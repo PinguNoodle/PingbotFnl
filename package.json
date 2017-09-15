@@ -3,25 +3,24 @@
   "version": "1.0.0",
   "description": "botfin",
   "main": "botmain.js",
-     "engines": {
-      "node": "7.8.0",
-      "npm": "4.2.0"
-},
+  "engines": {
+    "node": "7.8.0",
+    "npm": "4.2.0"
+  },
   "dependencies": {
     "discord.js": "^11.1.0",
+    "pkg": "^4.2.4",
     "uws": "^8.14.1"
- 
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/PinguNoodle/Pingbotfin"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    ,"start": "node --harmony ."
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony ."
   },
   "author": "",
   "license": "ISC"
 }
-
