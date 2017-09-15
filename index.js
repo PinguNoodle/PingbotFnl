@@ -1,6 +1,32 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const emitter = setMaxListeners=(50)
+const express = require('express');
+const app = express();
+
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+const port = process.env.PORT || 5000;
+
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
+// make express look in the `public` directory for assets (css/js/img)
+app.use(express.static(__dirname + '/public'));
+
+// set the home page route
+app.get('/', (request, response) => {
+    // ejs render automatically looks in the views folder
+    response.render('index');
+});
+
+app.listen(port, () => {
+    // will echo 'Our app is running on http://localhost:5000 when run locally'
+    console.log('Our app is running on http://localhost:' + port);
+});
+  TOKEN=[Discord, "MzQ4ODk4Mzk0ODU4NTg2MTEz.DIOYJg.V6dl4rzsCowyKfNzyMCoy2bf6D4"]
+CLIENT_ID=[Discord, "348898394858586113"]
+OWNER_ID=[232647324780855296]
 
 client.on('ready', () => {
   console.log('I am ready!');
