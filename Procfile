@@ -1,1 +1,1 @@
-web: node botmain.js
+web: node index.js
