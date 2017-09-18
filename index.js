@@ -159,6 +159,11 @@ client.on('message', message => {
     message.channel.sendMessage('Guests more like not pingu');
   }
 });
+  client.on('message', message => {
+    if (message.content === '!send-nuke') {
+    message.channel.sendMessage('Nuke launched successfully');
+  }
+});
 
 
 
