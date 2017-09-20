@@ -96,14 +96,10 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === '!timer1') {
     message.reply('Timer set for 1 minute');
-      setTimeout(function(){ message.reply("1 minute has passed"); }, 60000);
+      setTimeout(function(){ message.reply("joxon is feg"); }, 60000);
   }
 });
-client.on('message', message => {
-    if (message.content.startsWith('im ' )) {
-    message.reply(message.content.replace('im ','Hello ' ) + ' im Pingbot')
-    };
-});
+
   client.on('message', message => {
     if (message.content.startsWith('gay')) {
     message.reply("<https://www.youtube.com/watch?v=sWS0GVOQPs0>")
@@ -119,30 +115,30 @@ client.on('message', message => {
     message.reply("<https://www.youtube.com/watch?v=sWS0GVOQPs0>")
     };
 });
-  client.on('message', message => {
-    if (message.content.startsWith('Im ')) {
-    message.reply(message.content. replace('Im ','Hello ' ) + ' im Pingbot')
+    client.on('message', message => {
+     if (message.content.startsWith('Im ')) {
+     message.reply(message.content. replace('Im ','Hello ' ) + ' im Pingbot')
       
-    };
-});
-  client.on('message', message => {
-    if (message.content.startsWith("I'm ")) {
-    message.reply(message.content. replace("I'm ",'Hello ' ) + ' im Pingbot')
-      
-    };
-});
+     };
+ });
    client.on('message', message => {
-    if (message.content.startsWith("i'm ")) {
-    message.reply(message.content. replace("i'm ",'Hello ' ) + ' im Pingbot')
+     if (message.content.startsWith("I'm ")) {
+     message.reply(message.content. replace("I'm ",'Hello ' ) + ' im Pingbot')
       
-    };
-});
-   client.on('message', message => {
-    if (message.content.startsWith("iM ")) { 
-    message.reply(message.content. replace("iM ",'Hello ' ) + ' im Pingbot')
+     };
+ });
+    client.on('message', message => {
+     if (message.content.startsWith("i'm ")) {
+     message.reply(message.content. replace("i'm ",'Hello ' ) + ' im Pingbot')
       
-    };
+     };
+ });
+    client.on('message', message => {
+     if (message.content.startsWith("im ")) { 
+     message.reply(message.content. replace("im ",'Hello ' ) + ' im Pingbot')
+      };
 });
+ 
    client.on('message', message => {
     if (message.content === ("!good-song")) {
     message.reply('<https://www.youtube.com/watch?v=vdjPnlAJmAY>')
@@ -164,6 +160,13 @@ client.on('message', message => {
     message.channel.sendMessage('Nuke launched successfully');
   }
 });
+  client.on('message', message => {
+    if (message.author === ("Pingu#2911")) {
+    message.reply('fuck you')
+      
+    };
+}); 
+
 
 
 
