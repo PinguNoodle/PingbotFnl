@@ -57,8 +57,8 @@ client.on('ready', () => {
   }
 });
   client.on('message', message => {
-    if (message.content === '!cbschedule') {
-    message.channel.sendMessage('No CB scheduled yet');
+    if (message.content === '!schedule') {
+    message.channel.sendMessage('September 23rd - Mock CB | September 30th 7 pm est - FC crew battle | October 8th - Civil War');
   }
 });
   client.on('message', message => {
@@ -133,7 +133,7 @@ client.on('message', message => {
       
      };
  });
-    client.on('message', message => {
+  client.on('message', message => {
      if (message.content.startsWith("im ")) { 
      message.reply(message.content. replace("im ",'Hello ' ) + ' im Pingbot')
       };
@@ -160,12 +160,20 @@ client.on('message', message => {
     message.channel.sendMessage('Nuke launched successfully');
   }
 });
-  client.on('message', message => {
-    if (message.author === ("Pingu#2911")) {
-    message.reply('fuck you')
+     client.on('message', message => { {
+      if (message.content === ("fuck"))
+       message.channel.sendMessage('i fucked your mom last night')
       
     };
-}); 
+});
+       client.on('message', message => { {
+      if (message.content === ("Fuck"))
+       message.channel.sendMessage('i fucked your mom last night')
+      
+    };
+});
+
+ 
 
 
 
