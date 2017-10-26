@@ -4,7 +4,7 @@
   "description": "botfin",
   "main": "botmain.js",
   "test": "echo \"Error: no test specified\" && exit 1",
-  "start": "node --harmony . ",
+  "start": "npm start",
   "engines": {
     "node": "7.8.0",
     "npm": "4.2.0"
